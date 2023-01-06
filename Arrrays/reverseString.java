@@ -1,6 +1,5 @@
 package Ejercicios.Arrrays;
 import java.util.*; 
-import java.util.Collection;
 //Create a function that reverses a String.
 // Other solution is to create an other array called reverseArray and make a for loop 
 //in which we pass through the letters array and pass it to the reverseArray.
