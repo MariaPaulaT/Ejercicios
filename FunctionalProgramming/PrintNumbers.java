@@ -14,4 +14,28 @@ public class PrintNumbers {
         System.out.println(number);
     }
     }
+
+    private static void printAllNumbersInListFunctional(List<Integer> numbers) {
+    //[12,9,13,4,6,2,5,7,8,8,89,2]
+    //12
+    //9
+    //13
+    //-....
+    //We want to convert into a stream. 
+    numbers.stream()
+    .forEach(System.out::println);
+
+   }
+
+   private static boolean isEven(int number){
+    return number%2==0;
+   }
+   private static void printEvenNumbets(List<Integer> numbers) {
+     
+    numbers.stream() //Lambda expression check for each number if divided by 2 is equal to 0
+    .filter(number-> number%2 == 0) //filter - Only Allow even numbers
+    .forEach(System.out::println);
+
+   }
+   
 }
