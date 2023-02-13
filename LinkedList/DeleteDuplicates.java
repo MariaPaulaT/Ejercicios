@@ -31,6 +31,10 @@ public class DeleteDuplicates {
            
         ListNode2 actual = nodo;
         ListNode2 siguiente = actual.next;
+        if (nodo == null)
+        {
+            return null;
+        }
         while(actual.next!= null){
             int primero = actual.val;
             int segundo = actual.next.val;
@@ -41,7 +45,7 @@ public class DeleteDuplicates {
                     actual.next=null;
                 }
             }
-            
+
             if(actual.next != null){
 
                 actual = actual.next;
@@ -54,8 +58,7 @@ public class DeleteDuplicates {
         System.out.println(nodo.val);
         System.out.println(nodo.next.val);
         System.out.println(nodo.next.next.val);
-        
-        System.out.println(nodo.next.next.next.val);
+    
 
         return nodo;
     }
