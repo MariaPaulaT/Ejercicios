@@ -1,3 +1,5 @@
+package Arrrays;
+
 import java.util.HashMap;
 
 class commons{
